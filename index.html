@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Loquy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <section id="title" class="colored-section">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="#">
+          <img src="img/Loquy-Purple.png" alt="loquy-logo" class="logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#title">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Privacy</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </nav>
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col col-lg-6">
+          <h1 class="neumorphism">Loquy</h1>
+          <p>Read What You Hear</p>
+          <p>Loquy is a podcast application that allows users to listen to, download, and even transcribe clips from
+            their favorite podcasts.
+          </p>
+          <button type="button" class="btn btn-light btn-sm download-button"><i class="fab fa-apple"></i>
+            Download</button>
+          <button type="button" class="btn btn-dark btn-sm download-button"><i class="fab fa-github"></i>
+            Github</button>
+        </div>
+
+        <div class="col col-lg-6">
+          <img src="img/smartmockups_kq6vtsqf.png" alt="mockup" class="mockup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <div class="row">
+      <h2>Your New Favorite Podcast App</h2>
+      <h6>What Loquy Does That Others Don't</h6>
+
+      <div class="feature-box col-lg-4 ">
+        <img src="img/first.png" alt="search-photo" class="feature-img">
+        <h3>Timestamps</h3>
+        <p>Go back to any time in a saved podcast... Wherever, whenever</p>
+      </div>
+
+      <div class="feature-box col-lg-4 ">
+        <img src="img/second.png" alt="search-photo" class="feature-img">
+        <h3>Audio Clips</h3>
+        <p>Trim and save audio clips from your favorite podcasts</p>
+      </div>
+
+      <div class="feature-box col-lg-4 ">
+        <img src="img/third.png" alt="search-photo" class="feature-img">
+        <h3>Transcribe Audio</h3>
+        <p>Get a text transcription of your saved audio clips</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="colored-section">
+    <h2>FAQ</h2>
+
+    <div id="faq-slides" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h3>
+            I’ve seen other Apps that allow for audio clipping. What makes yours the best?</h3>
+          <p>
+            You're right. While there are other apps that allow users to clip audio from podcasts, Loquy makes it easier
+            for these clips to be accessed at a later time and provides a more enjoyable user experience when doing so.
+          </p>
+        </div>
+
+        <div class="carousel-item">
+          <h3>Do you have any implementations you would like to include in this app in the future?</h3>
+          <p>
+            Of course. This app is a work in progress. With the release of widgets with iOS 14, I believe the user
+            experience has a lot to gain by being able to access podcasts and transcriptions from them outside of the
+            app.
+          </p>
+        </div>
+
+        <div class="carousel-item">
+          <h3>Why in the world would someone want to transcribe audio clips from a podcast?</h3>
+          <p>
+            I first came up with the idea of transcribing audio clips from a podcast when I was trying to explain a
+            takeaway I had from one of my favorite shows to a deaf friend. Additionally, transcriptions can serve as a
+            reminder of sorts to help you recall what you listened to
+          </p>
+        </div>
+
+        <div class="carousel-item">
+          <h3>How are transcriptions made from the live output audio?</h3>
+          <p>
+            Loquy uses the Apple Speech framework along with AVKit to trim an mp3 file from a saved audio clip and then
+            uses SFSpeechRecognizer to transcribe that audio and display it as text.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Privacy Policy-->
+  <section id="privacy">
+    <div class="container-fluid">
+      <h2>Privacy Policy</h2>
+
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Legal Obligations
+            </button>
+          </h3>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Accordion Item #2
+            </button>
+          </h3>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Accordion Item #3
+            </button>
+          </h3>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+</script>
+
+</html>
