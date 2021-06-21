@@ -15,6 +15,10 @@ p {
     margin-top: 10px;
 }
 
+section {
+    padding: 3% 3%;
+}
+
 h1,
 h2,
 h3 {
@@ -66,6 +70,13 @@ h2::after {
     width: 100px;
 }
 
+a:link,
+a:visited {
+    color: #fff;
+    padding: 1px;
+    text-decoration: none;
+}
+
 a:hover,
 a:active {
     color: #fff;
@@ -78,6 +89,10 @@ a:active {
     padding: 10px;
     margin-bottom: 20px;
     text-transform: none;
+}
+
+#title a {
+    border-bottom: 0;
 }
 
 .navbar {
@@ -111,9 +126,9 @@ a:active {
 }
 
 .neumorphism {
-    box-shadow: 
-    12px 12px 16px 0 #671e9b5d,
-    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    box-shadow:
+        12px 12px 16px 0 #671e9b5d,
+        -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     border-width: 10px;
 }
@@ -139,4 +154,43 @@ a:active {
 
 #faq {
     text-align: center;
+}
+
+#contact .row {
+    margin: 0 20%;
+}
+
+.contact-form {
+    padding: 0;
+    text-align: center;
+}
+
+input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #a35cd7;
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 300px;
+}
+
+.submit-button {
+    margin-top: 10px;
+}
+
+#footer  {
+    text-align: center;
+}
+
+#footer a {
+    border-bottom: 0;
+}
+
+.social-icons {
+    margin: 20px 10px;
 }
